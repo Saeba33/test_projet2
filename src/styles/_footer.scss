@@ -1,0 +1,14 @@
+.footerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-image: url("./src/assets/img/footer.png");
+  object-fit: cover;
+}
+
+.socialNetwork {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}

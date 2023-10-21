@@ -1,0 +1,73 @@
+.coolitude {
+  background-color: #136467;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  background-color: aquamarine;
+  color: darkblue;
+  font-weight: bold;
+  font-size: calc(0.5em + 1.5vw);
+  padding: 30px;
+}
+
+li {
+  padding: 20px;
+}
+
+#logo {
+  width: 100%;
+}
+
+.intro {
+  color: black;
+  margin: 2vw;
+  width: 30%;
+}
+
+.alert {
+  color: orange;
+}
+
+.footerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-image: url("./src/assets/img/footer.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.socialNetwork {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cardContainer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2vh;
+  background-color: aquamarine;
+}
+
+.infoSpot {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  margin: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */

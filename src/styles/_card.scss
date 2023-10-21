@@ -1,0 +1,16 @@
+.cardContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2vh;
+    background-color: aquamarine;
+}
+
+.infoSpot {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    margin: 50px;
+}
