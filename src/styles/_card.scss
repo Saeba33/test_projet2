@@ -3,14 +3,34 @@
     width: 90%;
     margin: auto;
     margin-bottom: 2vh;
-    background-color: aquamarine;
+    background: linear-gradient(to top right, #B9E1DF, white);
 }
 
+.imgSpot {
+    margin: 50px;
+}
 .infoSpot {
     display: flex;
     flex-direction: column;
 }
 
-img {
-    margin: 50px;
+.titleSpot {
+    margin-top: 50px ;
+    background-color: antiquewhite;
+    width: 15vw;
+    margin-bottom: 10px;
+    
 }
+
+.descriptionSpot {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.others {
+    background-color: antiquewhite;
+    padding: 10px 180px 10px 10px;
+    margin-bottom: 10px;
+}
+

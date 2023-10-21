@@ -1,10 +1,10 @@
 const Card = () => {
   return (
     <div className="cardContainer">
-      <img src="./src/assets/img/plage.jpeg" alt="photo" />
+      <img className="imgSpot" src="./src/assets/img/plage.jpeg" alt="photo" />
       <div className="infoSpot">
-        <h4 className="titleSpot">Titre Spot</h4>
-        <p className="descriptionSpot">Description</p>
+        <h4 className="titleSpot">Titre du Spot</h4>
+        <p className="descriptionSpot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sed recusandae id, eaque nisi perferendis earum eius error doloribus ut.</p>
         <p className="others">Autres infos</p>
       </div>
     </div>

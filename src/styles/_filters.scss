@@ -1,0 +1,41 @@
+.filtersContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+.levels ul {
+    list-style: none;
+}
+
+.levels ul li {
+width: 200px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+font-size: 20px;
+}
+
+.levels ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    flex-direction: column;
+    box-shadow: black;
+    background-color: red;
+
+    &:hover {
+        background-color: aqua;
+        color: white;
+    }
+}
+
+.levels ul li ul li {
+    display: none;
+}
+
+.levels ul li:hover ul li {
+    display: block;
+}
