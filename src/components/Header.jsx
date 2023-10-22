@@ -1,6 +1,5 @@
 const Header = () => {
   return (
-    <>
       <header>
         <div className="coolitude">
           <p>
@@ -8,27 +7,18 @@ const Header = () => {
             Phrases motivantes défilantes - Phrases motivantes défilantes{" "}
           </p>
         </div>
-        <nav>
-          
-          <ul className="navbar">
-            <li>
-              <a href="home"></a>Home
-            </li>
-            <li>
-              <a href="infos"></a>Infos et définitions
-            </li>
-            <li>
-              <a href="contact"></a>Contact
-            </li>
-            <li>
-              <a href="login"></a>Login
-            </li>
+        <nav className="navbar">
+          <ul className="links">
+            <li><a href="home">Home</a></li>
+            <li><a href="infos">Infos</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="login">Login</a></li>
           </ul>
           <div className="logo" alt="logo"></div>
         </nav>
         <div className="intro">
           <h1>Surf sur ton spot !</h1>
-          <br />
+          <br/>
           <div className="subtitle">
             <h2> Sous-titre </h2>
             <p>
@@ -37,7 +27,7 @@ const Header = () => {
               incidunt vitae provident.æ
             </p>
           </div>
-          <br />
+          <br/>
           <div className="alert">
             <h3>Alerte</h3>
             <p>
@@ -47,7 +37,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </>
   );
 };
 

@@ -33,28 +33,29 @@ input,
 .navbar {
   display: flex;
   justify-content: flex-end;
-  list-style-type: none;
   background-color: #108888;
-  color: white;
   padding: 20px;
-  font-size: calc(0.5em + 1.5vw);
-  opacity: 0.5;
-  position: relative;
   width: 100%;
 }
 
-.navbar li {
-  padding-right: 20px;
+.links {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
 }
 
-.navbar > li > a {
+.links li {
+  margin-left: 20px;
+}
+
+.links li a {
   text-decoration: none;
   line-height: 20px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
-.navbar > li > a:after {
+.links li a:after {
   content: "";
   display: block;
   margin: auto;
@@ -64,9 +65,9 @@ input,
   transition: width 0.5s ease, background-color 0.5s ease;
 }
 
-.navbar > li > a:hover:after {
+.links li a:hover:after {
   width: 100%;
-  background: black;
+  background: white;
 }
 
 .logo {
@@ -78,13 +79,15 @@ input,
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   opacity: 0.5;
 }
 
 .intro {
   color: black;
-  margin: 2vw;
+  margin-top: 35vh;
+  margin-left: 15vw;
+  margin-bottom: 20vh;
   width: 30%;
 }
 
@@ -187,35 +190,58 @@ input,
   margin-bottom: 100px;
 }
 
-.levels ul {
+.calendar,
+.levels,
+.localisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   list-style: none;
 }
 
-.levels ul li {
+.calendarButton,
+.levelButton,
+.localisationButton {
+  background: #ceeae8;
+  box-shadow: 5px 5px 5px lightblue;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+  padding: 5px 30px;
+  position: relative;
+}
+
+.calendar img,
+.levels img,
+.localisation img {
+  cursor: pointer;
+}
+
+.levelButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.calendar ul li,
+.levels ul li,
+.localisation ul li {
   width: 200px;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  font-size: 20px;
-}
-
-.levels ul li a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  flex-direction: column;
-  box-shadow: black;
-  background-color: red;
-}
-.levels ul li a:hover {
-  background-color: aqua;
-  color: white;
-}
-
-.levels ul li ul li {
+  font-size: 15px;
   display: none;
+  text-decoration: none;
 }
 
-.levels ul li:hover ul li {
+.calendar ul.visible li,
+.levels ul.visible li,
+.localisation ul.visible li {
   display: block;
 }/*# sourceMappingURL=index.css.map */

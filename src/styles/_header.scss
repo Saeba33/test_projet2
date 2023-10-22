@@ -1,8 +1,5 @@
-$secondary-dark: #136467;
-$fs-h2: calc(0.5em + 1.5vw);
-
 .coolitude {
-  background-color: $secondary-dark;
+  background-color: #136467;
   color: white;
   text-align: center;
   padding: 1vh;
@@ -24,31 +21,33 @@ $fs-h2: calc(0.5em + 1.5vw);
   }
 }
 
+
 .navbar {
   display: flex;
   justify-content: flex-end;
-  list-style-type: none;
   background-color: #108888;
-  color: white;
   padding: 20px;
-  font-size: $fs-h2;
-  opacity: 0.5;
-  position: relative;
   width: 100%;
 }
 
-.navbar li {
-  padding-right: 20px;
+.links {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
 }
 
-.navbar > li > a {
+.links li {
+  margin-left: 20px;
+}
+
+.links li a {
   text-decoration: none;
   line-height: 20px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
-.navbar > li > a:after {
+.links li a:after {
   content: "";
   display: block;
   margin: auto;
@@ -58,11 +57,10 @@ $fs-h2: calc(0.5em + 1.5vw);
   transition: width 0.5s ease, background-color 0.5s ease;
 }
 
-.navbar > li > a:hover:after {
+.links li a:hover:after {
   width: 100%;
-  background: black;
+  background: white;
 }
-
 
 .logo {
   width: 100%;
@@ -73,13 +71,15 @@ $fs-h2: calc(0.5em + 1.5vw);
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
-  opacity:0.5
- }
+  z-index: -1;
+  opacity: 0.5;
+}
 
 .intro {
   color: black;
-  margin: 2vw;
+  margin-top: 35vh;
+  margin-left: 15vw;
+  margin-bottom: 20vh;
   width: 30%;
 }
 
