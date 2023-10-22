@@ -12,7 +12,7 @@ const Filters = () => {
   const toggleLevel = () => {
     setLevelVisible(!isLevelVisible);
   };
-  const toggleLocation = () => {
+  const toggleLocalisation = () => {
     setLocationVisible(!isLocationVisible);
   };
 
@@ -20,9 +20,7 @@ const Filters = () => {
     <section className="filtersContainer">
       <div className="calendar">
         <img src="./src/assets/img/calendar.png" alt="calendrier"></img>
-        <button className="calendarButton" onClick={toggleCalendar}>
-          Calendrier {isCalendarVisible ? "-" : "+"}
-        </button>
+        <button className="calendarButton" onClick={toggleCalendar}>Calendrier {isCalendarVisible ? "-" : "+"}</button>
       </div>
       <div className="levels">
         <div className="levelButtonContainer">
@@ -37,9 +35,7 @@ const Filters = () => {
       </div>
       <div className="localisation">
         <img src="./src/assets/img/localisation.png" alt="localisation"></img>
-        <button className="localisationButton" onClick={toggleLocation}>
-          Localisation {isLocationVisible ? "-" : "+"}
-        </button>
+        <button className="localisationButton" onClick={toggleLocalisation}>Localisation {isLocationVisible ? "-" : "+"}</button>
       </div>
     </section>
   );
