@@ -6,6 +6,22 @@ $fs-h2: calc(0.5em + 1.5vw);
   color: white;
   text-align: center;
   padding: 1vh;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.coolitude p {
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .navbar {
@@ -14,11 +30,15 @@ $fs-h2: calc(0.5em + 1.5vw);
   list-style-type: none;
   background-color: #108888;
   color: white;
+  padding: 20px;
   font-size: $fs-h2;
-  padding: 30px;
   opacity: 0.5;
-  //position: absolute;
+  position: relative;
   width: 100%;
+}
+
+.navbar li {
+  padding-right: 20px;
 }
 
 .navbar > li > a {
@@ -48,8 +68,13 @@ $fs-h2: calc(0.5em + 1.5vw);
   width: 100%;
   height: 1000px;
   background-image: url("./src/assets/img/logo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity:0.5
  }
 
 .intro {

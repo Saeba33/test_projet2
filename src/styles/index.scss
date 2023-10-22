@@ -1,11 +1,3 @@
-//IMPORTS//
-@import "_header";
-@import "_footer";
-@import "_card";
-@import "_cardlist";
-@import "_menuBurger";
-@import "_filters";
-
 //VARIABLES//
 $primary-light: #ceeae8;
 $secondary-light: #fcf2e0;
@@ -50,3 +42,11 @@ input,
   box-sizing: border-box;
   font-family: 'Poppins', 'Roboto', sans-serif;
 }
+
+//IMPORTS//
+@import "_header";
+@import "_footer";
+@import "_card";
+@import "_cardlist";
+@import "_menuBurger";
+@import "_filters";

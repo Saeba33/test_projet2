@@ -7,7 +7,7 @@
   background-size: cover;
   opacity: 0.9;
   color: white;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .socialNetwork {
@@ -17,14 +17,18 @@
   align-items: center;
 }
 
-.socialNetwork > li > a {
+.socialNetwork li {
+  margin-left: 20px;
+}
+
+.socialNetwork li a {
   text-decoration: none;
   line-height: 20px;
   text-align: center;
   color: black;
 }
 
-.socialNetwork > li > a:after {
+.socialNetwork li a:after {
   content: "";
   display: block;
   margin: auto;
@@ -34,7 +38,7 @@
   transition: width 0.5s ease, background-color 0.5s ease;
 }
 
-.socialNetwork > li > a:hover:after {
+.socialNetwork li a:hover:after {
   width: 100%;
   background: black;
 }

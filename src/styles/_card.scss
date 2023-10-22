@@ -7,18 +7,24 @@
 }
 
 .imgSpot {
+    display: flex;
+    width: 90%;
+    height: 50vh;
     margin: 50px;
+    background-image: url("./src/assets/img/plage.jpeg");
+    background-size: cover;
+    border: none;
 }
+
 .infoSpot {
     display: flex;
     flex-direction: column;
 }
 
 .titleSpot {
-    margin-top: 50px ;
     background-color: antiquewhite;
-    width: 15vw;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin: 50px 40px 10px 0;
     
 }
 
@@ -26,11 +32,13 @@
     background-color: antiquewhite;
     padding: 10px;
     margin-bottom: 10px;
+    margin-right: 40px;
 }
 
 .others {
     background-color: antiquewhite;
-    padding: 10px 180px 10px 10px;
     margin-bottom: 10px;
+    margin-right: 40px;
+    padding: 10px;
 }
 
