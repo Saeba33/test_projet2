@@ -2,18 +2,18 @@ import axios from 'axios';
 import { useState } from 'react';
 
 const GlobalArray = {
-    location_id: {'Hossegor'},
-    swell_wave_height: {''},
-    wave_direction: {''},
-    wave_period: {''},
-    windspeed_unit: {''},
-    winddirection_10m: {''},
-    temperature_unit: {''},
-    weathercode: {''},
-    precipation: {''},
-    sunrise: {''},
-    sunset: {''},
-    precipation: {''},
+    location_id: 'Hossegor',
+    swell_wave_height: '6',
+    wave_direction: 'SO',
+    wave_period: '',
+    windspeed_unit: '',
+    winddirection_10m: '',
+    temperature_unit: '',
+    weathercode: '',
+    precipation: '',
+    sunrise: '',
+    sunset: '',
+    
 };
 
 
@@ -28,19 +28,19 @@ const Array = () => {
     return (
         <div id="ArrayContainer">
           <GlobalArray
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}
-          location_id={data.location}          
+          location={data.location_id}
+          swell={data.swell_wave_height}
+          wavedirection={data.wave_direction}
+          waveperiod={data.wave_period}
+          windspeed={data.windspeed_unit}
+          winddirection={data.winddirection_10m}
+          temperature={data.temperature_unit}
+          weather={data.weathercode}
+          precipitation={data.precipation}
+          sunrise={data.sunrise}
+          sunset={data. sunset}
           />
+         <button className="button" type="button" onClick={getData}>Get Data</button>
         </div>
     );
 };
